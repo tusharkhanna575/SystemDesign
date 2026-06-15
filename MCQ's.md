@@ -236,5 +236,97 @@ _Example:_
 
 ### Database Design
 
-**Q1.**
+**Q1.** NoSQL databases are generally preferred when
+
+- [x] Horizontal scaling required
+- [ ] Strict schema enforcement required
+- [ ] Transactions required
+- [ ] Complex joins required
+  
+**Technical Explanation:** NoSQL databases scale across distributed systems and support flexible schemas.
+_Example:_
+
+- MongoDB
+- Cassandra
+- DynamoDB
+
+Ideal for large-scale applications.
+
+---
+
+**Q2.** Key-value databases are best suited for
+
+- [ ] Complex joins
+- [x] Fast lookup operations
+- [ ] Graph traversal
+- [ ] Data warehousing
+  
+**Technical Explanation:** Key-value retrieve data extremely fast using keys.
+
+_Example:_
+- `session_id -> user_session_data`
+
+Used in:
+- Redis
+- DynamoDB
+- Memcached
+
+---
+
+### AWS Cloud Native Systems
+
+**Q1.** Which AWS service provides global content delivery?
+
+- [ ] Aurora
+- [x] CloudFront
+- [ ] DynamoDB
+- [ ] CloudWatch
+
+**Technical Explanantion:** CloudFront distributes cached content globally using edge locations similar to a CDN.
+
+_Example:_
+
+`Used in Europe -> served from nearest edge location`
+
+---
+
+**Q2.** Which AWS services is serverless compute?
+
+- [ ] EC2
+- [ ] ECS
+- [ ] RDS
+- [x] Lambda
+
+**Technical Explanation:** AWS Lambda runs code without managing servers.
+
+_Example:_
+
+`Upload image -> Lambda resizes automatically`
+
+Benefits:
+- auto scaling
+- pay per execution
+- no infrastructure management
+
+---
+
+### Real-Time Statistics + Interview Topics
+
+**Q1.** Why does WebRTC prefer UDP over TCP?
+
+- [ ] Better storage
+- [x] Lower Latency communication
+- [ ] Higher encryption
+- [ ] Better caching
+
+**Technical Explanation:** Real-time applications prioritize speed over reliability.
+
+- `TCP`: Reliable but slower (retransmits lost packets)
+- `UDP`: Faster but may drop packets
+  
+_Example:_
+- `Video call → better to skip frame than delay`
+
+That's why WebRTC uses UDP.
+
 <!--- Eraser file: https://app.eraser.io/workspace/fZujYE9XsojCkYEbUn4C --->
