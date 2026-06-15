@@ -8,6 +8,8 @@
 - [x] B. Concurrency conflicts
 - [ ] C. Distributed consensus failure
 - [ ] D. GPU bottleneck
+
+
 **Technical Explanation:**
 With a single user, no competition exists for resources. As multiple users interact simultaneously, problems like race conditions, database locks, and shared state conflicts begin appearing.
 
@@ -19,6 +21,8 @@ With a single user, no competition exists for resources. As multiple users inter
 - [ ] B. Application layer
 - [ ] C. Presentation layer
 - [x] D. Data layer
+
+
 **Technical Explanation:**
 The data layer handles long-term storage such as databases, object storage, and files. The application layer processes logic, but persistence happens in the data layer.
 
@@ -30,6 +34,8 @@ The data layer handles long-term storage such as databases, object storage, and 
 - [ ] B. Cache application responses
 - [ ] C. Encrypt traffic
 - [x] D. Convert domain name to IP address
+
+
 **Technical Explanation:** Browsers cannot directly communicate using domain names like `google.com`. DNS resolves
 this human-readable name into a machine-readable IP address (like `142.250.x.x`) so the request can be routed to the correct server.
 
@@ -42,6 +48,8 @@ this human-readable name into a machine-readable IP address (like `142.250.x.x`)
 - [x] B. Tight coupling between modules
 - [ ] C. Network latency
 - [ ] D. Multiple services deployment
+
+
 **Technical Explanation:** In monoliths, all modules depend heavily on each other. A small change in one module can affect unrelated components, making scaling and deployment harder.
 
 ---
@@ -52,6 +60,8 @@ this human-readable name into a machine-readable IP address (like `142.250.x.x`)
 - [ ] B. Normalization
 - [x] C. Replication
 - [ ] D. Serialization
+
+
 **Technical Explanation:** Replication creates read replicas of a database so read traffic can be distributed across multiple machines, reducing load on the primary database.
 _Example:_
 
@@ -65,6 +75,8 @@ _Example:_
 - [x] B. Consistency, Availability, Partition tolerance
 - [ ] C. Compute, Availability, Persistence
 - [ ] D. Cache, Access, Performance
+
+
 **Technical Explanation:** In distributed systems;
 
 - Consistency -> same data everywhere
@@ -85,6 +97,8 @@ _Example:_
 - [x] B. Adding more machines
 - [ ] C. Increasing disk speed
 - [ ] D. Increasing CPU power
+
+
 **Technical Explanation:** Instead of upgrading one server (vertical scaling), horizontal scaling adds more servers to distribute workload and improve fault tolerance.
 
 _Example:_
@@ -100,6 +114,8 @@ _Example:_
 - [x] B. One sender communicates with multiple receivers
 - [ ] C. One sender communicates with one receiver
 - [ ] D. Authentication is required
+
+
 **Technical Explanation:** Publisher sends one event -> multiple subscribers receive it independently.
 
 _Example:_ 
@@ -114,6 +130,8 @@ _Example:_
 - [x] Message Queue
 - [ ] Load Balancer
 - [ ] Reverse Proxy
+
+
 **Technical Explanation:** Message queues allows tasks like emails, video processing, or analytics jobs to run asynchronously without blocking user requests.
 
 _Example:_
@@ -131,6 +149,8 @@ Reads and Writes
 Sync and Async Logic
 
 Cache and DB Layers
+
+
 
 **Technical Explanation:** CQRS improves performance and scalability by using different models/databases for reading and writing operations.
 
