@@ -142,14 +142,10 @@ _Example:_
 
 **Q3.** CQRS seprates
 
-UI and Backend
-
-Reads and Writes
-
-Sync and Async Logic
-
-Cache and DB Layers
-
+- [ ] UI and Backend
+- [x] Reads and Writes
+- [ ] Sync and Async Logic
+- [ ] Cache and DB Layers
 
 
 **Technical Explanation:** CQRS improves performance and scalability by using different models/databases for reading and writing operations.
