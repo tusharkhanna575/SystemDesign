@@ -7,7 +7,7 @@
 | ----- | ----- |
 | 1 | [Introduction to System Design](01%20-%20Introduction%20to%20System%20Design.html) |
 | 2 | [Scaling Database(s) to Millions](02%20-%20Scaling%20Database%20to%20Millions.html) |
-| 3 | [MCQ's](03%20-%20MCQ's.html) |
+| 3 | [MCQ's](MCQ's.html) |
 
 
 
